@@ -1,8 +1,8 @@
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 import skimage.draw
 
-def hogvis(descriptor,bsize=8,norient=9):
+def hogvis(descriptor, bsize=8, norient=9):
     """
     This function visualizes a hog descriptor using little
     icons to indicate orientation. We follow the convention
@@ -71,3 +71,5 @@ def test_hogvis():
     hogim = hogvis(a,bsize=20)
     plt.imshow(hogim)
     plt.show()
+
+# test_hogvis()
